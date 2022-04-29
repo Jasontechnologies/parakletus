@@ -1,0 +1,147 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+.fw-medium {
+  font-weight: 500;
+}
+.fw-semibold {
+  font-weight: 600;
+}
+.fw-bold {
+  font-weight: 700;
+}
+.text-black-primary {
+  color: #333;
+}
+.text-black-secondary {
+  color: #666;
+}
+.scale-up {
+  transform: scale(1.2);
+}
+.linear-gradient-body {
+  background: linear-gradient(287.83deg, #22c1c3, #ff9966);
+}
+/* .linear-gradient-body {
+  background: linear-gradient(
+    287.83deg,
+    #8d99ae 32.33%,
+    rgba(237, 242, 244, 0) 91.61%
+  );
+} */
+.locate-floor {
+  right: 0;
+  transform: translate(40%, 0%);
+}
+.with-fit-content {
+  width: fit-content;
+}
+
+@media only screen and (max-width: 600px) {
+  .scale-down {
+    width: 170%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .width-100-important {
+    width: 100% !important;
+  }
+  .scale-up {
+    transform: scale(1);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .scale-down {
+    width: 200%;
+  }
+}
+
+/* Color Pallete */
+.gunmetal {
+  background-color: #2b2d42;
+}
+.cool-grey {
+  background-color: #8d99ae;
+}
+.anti-flash-white {
+  background-color: #f4efed;
+}
+.medium-candy-apple-red {
+  background-color:#22c1c3;
+}
+
+.text-gunmetal {
+  color: #2b2d42;
+}
+
+
+
+
+
+
+.mobile{
+  border-radius:25px;
+  width:310px;
+  height:690px;
+  background-image:url('https://i.ibb.co/J5RTHDC/Glassmorphism-Bacground.png');
+}
+.mobile img{
+  min-width:100%;
+  width:100%;
+  border-radius:25px;
+}
+.content{
+  position:relative;
+}
+.glassmorphism-card{
+    width: 300px;
+    height: 80px;
+    border-radius: 16px;
+    padding: 0.65rem;
+    cursor: pointer;
+    background: rgba(255,255,255,0.25);
+    box-shadow: 20px 20px 40px -6px rgb(0 0 0 / 20%);
+    backdrop-filter: blur(0.6px);
+    border: 2px solid rgba( 255, 255, 255, 0.18 );
+    -webkit-backdrop-filter: blur(0.6px);
+    z-index:10000;
+    margin:0 auto;
+}
+.head1{
+  color:#22c1c3;
+  text-align:center;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+.glassmorphism-card >p{
+   text-align:center;
+   font-size: 0.85rem;
+}
+.description{
+  padding:rem;
+}
+.description>h1{
+  text-align:left;
+  font-size: 1.15rem;
+  font-weight:500;
+}
+.description p{
+   text-align:left;
+  padding-top:1rem;
+  font-size: 0.865rem;
+}
+.glassmorphism-circle{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    padding: 0.65rem;
+    cursor: pointer;
+    background:#22c1c3;
+    box-shadow: 20px 20px 40px -6px rgb(0 0 0 / 20%);
+    backdrop-filter: blur(0.6px);
+    border: 2px solid rgba( 255, 255, 255, 0.18 );
+    -webkit-backdrop-filter: blur(0.6px);
+    z-index:10000;
+}
