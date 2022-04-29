@@ -1,0 +1,12 @@
+ {% extends 'front/base.html' %}
+{%  block title %} Sponsors | {% endblock %}
+
+{% block content %}
+<h1> Sponsors</h1>
+{% for sponsor in sponsors%}
+  {% if sponsor.image %}
+    <img src="{{sponsor.image.url}}">
+  {% endif %}
+              <p>{{ sponsor.name }}</p>
+{% endfor%}
+{% endblock%}

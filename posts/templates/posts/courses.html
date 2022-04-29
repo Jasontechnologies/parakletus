@@ -1,0 +1,12 @@
+{% extends 'front/base.html' %}
+{%  block title %} Courses | {% endblock %}
+
+{% block content %}
+<h1> Courses </h1>
+{% for course in courses%}
+  {% if course.image %}
+    <img src="{{course.image.url}}">
+  {% endif %}
+              <p>{{ course.name }}</p>
+{% endfor%}
+{% endblock%}

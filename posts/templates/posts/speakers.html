@@ -1,0 +1,12 @@
+{% extends 'front/base.html' %}
+{%  block title %} Speakers | {% endblock %}
+
+{% block content %}
+<h1> Speakers </h1>
+{% for speaker in speakers%}
+  {% if speaker.image %}
+    <img src="{{speaker.image.url}}">
+  {% endif %}
+              <p>{{ speaker.name }}</p>
+{% endfor%}
+{% endblock%}
