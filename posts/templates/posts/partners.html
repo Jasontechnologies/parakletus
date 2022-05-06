@@ -1,0 +1,28 @@
+ {% extends 'front/base.html' %}
+{%  block title %} Partners | {% endblock %}
+
+{% block content %}
+{% if partners %}
+<section>
+ <h6 class="text-muted">Partners</h6>
+<div class="container  mt-xl-5 mt-lg-5">
+
+<div class="row">
+ {% for partner in partners %}
+	<div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3">
+     
+      {% if partner.image %}
+  <img style="height:216px; width: auto;position:relative;object-fit: contain;" class="w-100 img-fluid rounded-sm" src="{{sponsor.image.url}}" alt=""/>
+  <div class="justify-content-center">
+    <p class="text-justify">{{ partner.name }}</p>
+  </div>
+		  {% endif %}
+
+		</div>
+				  {% endfor %}
+	</div>
+</div>
+</section>
+{% endif %}
+
+{% endblock%}
